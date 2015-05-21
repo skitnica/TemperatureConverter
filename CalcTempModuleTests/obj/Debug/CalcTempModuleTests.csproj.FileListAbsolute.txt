@@ -1,0 +1,5 @@
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\CalcTempModuleTests\bin\Debug\CalcTempModuleTests.dll
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\CalcTempModuleTests\bin\Debug\CalcTempModuleTests.pdb
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\CalcTempModuleTests\bin\Debug\nunit.framework.dll
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\CalcTempModuleTests\obj\Debug\CalcTempModuleTests.dll
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\CalcTempModuleTests\obj\Debug\CalcTempModuleTests.pdb

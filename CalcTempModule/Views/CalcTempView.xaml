@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="CalcTempModule.Views.CalcTempView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="clr-namespace:Microsoft.Practices.Prism.Mvvm;assembly=Microsoft.Practices.Prism.Mvvm.Desktop"
+             xmlns:local="clr-namespace:CalcTempModule.ViewModels"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             FocusManager.FocusedElement="{Binding ElementName=inputTemperature,Mode=OneTime}"  >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style x:Key="HeaderTextStyle" TargetType="TextBlock" >
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Margin" Value="5,1" />
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="3" Text="Temperature Converter" Style="{StaticResource HeaderTextStyle}" />
+
+        <TextBox Name="inputTemperature" Grid.Row="1" Height="24" 
+                 Text="{Binding InputTemperature,UpdateSourceTrigger=PropertyChanged}" 
+                 VerticalAlignment="Bottom" FontSize="14"  TextAlignment="Center" 
+                 local:TextBoxBehavior.SelectAllTextOnFocus="True"
+                 Margin="1" />
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <RadioButton Name="toFahrenheit"  Content="To Fahrenheit" FontSize="10" Margin="5,1" 
+                         IsChecked="{Binding CalculateFahrenheit}"/>
+            <RadioButton Name="toCelsius" Content="To Celsius"  FontSize="10" Margin="5,1" 
+                         IsChecked="{Binding CalculateCelsius}"/>
+        </StackPanel>
+        <TextBlock Name="resultTemperature" Text="{Binding Result, StringFormat={}{0: ###.##}}" Grid.Row="1" Grid.Column="2" Height="24"  
+                   VerticalAlignment="Bottom" FontSize="14" TextAlignment="Center" Margin="1" FontWeight="Medium" />
+    </Grid>
+</UserControl>

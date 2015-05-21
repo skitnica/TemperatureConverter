@@ -1,0 +1,6 @@
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\AutomationTestHarness\bin\Debug\AutomationTestHarness.exe.config
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\AutomationTestHarness\bin\Debug\AutomationTestHarness.exe
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\AutomationTestHarness\bin\Debug\AutomationTestHarness.pdb
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\AutomationTestHarness\obj\Debug\AutomationTestHarness.csprojResolveAssemblyReference.cache
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\AutomationTestHarness\obj\Debug\AutomationTestHarness.exe
+C:\Users\Adele\Documents\Dev\Projects\CalcTemp\AutomationTestHarness\obj\Debug\AutomationTestHarness.pdb
